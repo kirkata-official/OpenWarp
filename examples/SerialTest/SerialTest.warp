@@ -1,0 +1,7 @@
+#include "OpenWarp.h"
+
+void main(void) {
+    kill_watchdogs();
+    serialBegin(115200);
+    serialPrint("Hello, World!");
+}

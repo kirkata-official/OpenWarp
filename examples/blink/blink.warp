@@ -1,0 +1,13 @@
+#include "OpenWarp.h"
+
+#define PIN 2
+
+void main(void) {
+    kill_watchdogs();
+    while(1) {
+        pinWrite(PIN, HIGH);
+        wait(1000);
+        pinWrite(PIN, LOW);
+        wait(1000);
+    }
+}
